@@ -235,9 +235,9 @@ class MonthPicker extends React.PureComponent {
 MonthPicker.defaultProps = {
   selectedDate: moment(),
   currentDate: moment(),
-  maxDate: moment(),
+  maxDate: moment('2050'),
   minDate: moment("01-01-1900", "DD-MM-YYYY"),
-  selectedBackgroundColor: "#000",
+  selectedBackgroundColor: "red",
   selectedMonthTextStyle: { color: "#fff" },
   seperatorHeight: 1,
   seperatorColor: "#b6c3cb",
@@ -247,7 +247,7 @@ MonthPicker.defaultProps = {
   prevText: "Prev",
   containerStyle: null,
   yearTextStyle: null,
-  monthFormat: "MMM",
+  monthFormat: "MM",
   currentMonthTextStyle: {
     color: "#25cc9d",
   },
